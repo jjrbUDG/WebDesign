@@ -1,0 +1,131 @@
+<!doctype html>
+<html style="font-size: 20px;" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Nipon - Reserva</title>
+  <meta name="description" content="Quieres conocer Japón? Visitanos!">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="author" content="Jorge Javier Rivera Basulto">
+
+  <link href="favicon.ico" rel="icon" type="image/x-icon"/>
+</head>
+
+<style>
+  /* grays out select on non value option */
+  select:invalid {
+    color: gray;
+  }
+</style>
+
+<body>
+<header>
+  <h1>El país Nipón</h1>
+
+  <nav>
+    <ul style="list-style: none;display: flex;justify-content: space-around">
+      <li><a href="index.html">Konnichiwa</a></li>
+      <li><a href="historia.html">Conoce la historia</a></li>
+      <li><a href="highlights.html">Atractivos principales</a></li>
+      <li><a href="testimonios.html">Testimonios</a></li>
+      <li><strong>Reserva tu visita</strong></li>
+      <li><a href="recomendaciones.html">Recomendaciones</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main style="display: flex;">
+  <section style="width: 60%;">
+
+    <h2>Reserva tu visita</h2>
+
+    <form action="respuesta.html">
+      <fieldset>
+        <legend>Información personal</legend>
+
+        <div>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" placeholder="Nombre completo">
+        </div>
+
+        <div>
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com">
+
+          <label for="telephone">Teléfono:</label>
+          <input type="tel" id="telephone" name="telephone" placeholder="55-1234-5678"
+                 pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Datos del viaje</legend>
+
+        <label for="arrival">Fecha de llegada</label>
+        <input type="date" id="arrival" name="arrival">
+
+        <label for="destination">Destino</label>
+        <select type="" id="destination" name="destination" required>
+          <!-- select "placeholder" -->
+          <option value="" disabled selected hidden>Selecciona un destino</option>
+
+          <option value="kioto">Kioto</option>
+          <option value="osaka">Osaka</option>
+          <option value="nara">Nara</option>
+          <option value="hokkaido">Hokkaido</option>
+          <option value="tokio">Tokio</option>
+          <option value="okinawa">Okinawa</option>
+          <option value="nagano">Nagano</option>
+          <option value="hakone">Hakone</option>
+        </select>
+
+        <p>Por que razón visitaras el país</p>
+        <label for="business-travel">
+          <input name="reason" id="business-travel" type="radio"> Negocios
+        </label>
+
+        <label for="pleasure-travel">
+          <input name="reason" id="pleasure-travel" type="radio"> Placer
+        </label>
+
+        <label for="other-travel">
+          <input name="reason" id="other-travel" type="radio"> Otro
+        </label>
+      </fieldset>
+
+
+      <input type="submit" value="Reservar">
+    </form>
+  </section>
+
+  <aside style="width: 40%;justify-items: center;display: flex">
+    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/V6Wlw42bqZw" title="Japón deslumbrante"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;"
+            allowfullscreen></iframe>
+  </aside>
+</main>
+
+<footer style="display: flex;justify-content: space-evenly">
+  <section>
+
+  </section>
+
+  <address>
+    <h6>INFORMACIÓN DE CONTACTO:</h6>
+    <dl>
+      <dt>Nombre:</dt>
+      <dd>Jorge Javier Rivera Basulto</dd>
+
+      <dt>Correo Electrónico:</dt>
+      <dd><a href="mailto:jorge.rivera@udgvirtual.udg.mx">jorge.rivera@udgvirtual.udg.mx</a></dd>
+
+      <dt>Teléfono:</dt>
+      <dd><a href="tel:+523312173726">33-1217-3726</a></dd>
+    </dl>
+  </address>
+</footer>
+</body>
+
+</html>
